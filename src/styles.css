@@ -1,0 +1,17 @@
+html, body, #root { margin: 0; height: 100%; background: #202124; color: #ddd; font: 13px/1.4 system-ui, sans-serif; }
+.app { display: grid; grid-template-columns: 1fr 340px; height: 100%; }
+.stage-wrap { display: grid; place-items: center; overflow: hidden; }
+/* Fixed 3:2 render area, letterboxed. Snapshot framing never depends on window size. */
+.stage { background: #2b2c30; box-shadow: 0 0 0 1px #000; }
+.stage canvas { display: block; }
+.side { overflow: auto; border-left: 1px solid #000; padding: 8px; }
+.side pre.state { font: 11px/1.35 ui-monospace, monospace; white-space: pre-wrap; color: #9ad; margin: 8px 0 0; }
+.leva-host { position: relative; }
+.loaders { display: grid; gap: 6px; margin-top: 10px; font-size: 11px; color: #aaa; }
+.loaders label { display: grid; gap: 3px; }
+.loaders input[type=file] { font-size: 11px; color: #ccc; }
+.loaders button { justify-self: start; font-size: 11px; background: #333; color: #ddd; border: 1px solid #555; padding: 3px 8px; cursor: pointer; }
+.loaders .warn { color: #f5a; margin: 0; }
+.credits { margin-top: 14px; padding-top: 10px; border-top: 1px solid #333; font-size: 11px; color: #999; }
+.credits p { margin: 0 0 6px; }
+.credits a { color: #9ad; }

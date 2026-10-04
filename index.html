@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car-shots</title>
+    <meta name="description" content="A three.js tool that renders one fictional car the same way every time." />
+  </head>
+  <body>
+    <script>
+      window.__errs = [];
+      window.addEventListener('error', (e) => window.__errs.push('error: ' + e.message));
+      window.addEventListener('unhandledrejection', (e) => window.__errs.push('rejection: ' + (e.reason && e.reason.message || e.reason)));
+      const __log = console.log.bind(console); window.__logs = [];
+      console.log = (...a) => { window.__logs.push(a.map(String).join(' ')); __log(...a); };
+      const __err = console.error.bind(console);
+      console.error = (...a) => { window.__errs.push('console.error: ' + a.map(String).join(' ')); __err(...a); };
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

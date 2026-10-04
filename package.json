@@ -1,0 +1,48 @@
+{
+  "name": "car-shots",
+  "version": "1.0.0",
+  "description": "A three.js tool that renders one fictional car the same way every time: paints, decals, liveries, camera shots and PNG export.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prep-model": "node scripts/prep-model.mjs models-src/generic_supercar.glb public/models/car.glb"
+  },
+  "keywords": [
+    "three.js",
+    "react-three-fiber",
+    "claude-code"
+  ],
+  "author": "Tirish Sooriah",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "@gltf-transform/functions": "^4.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^6.1.1",
+    "draco3dgltf": "^1.5.7",
+    "sharp": "^0.35.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "leva": "^0.10.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tirish-design/car-shots"
+  },
+  "homepage": "https://car-shots.vercel.app"
+}
