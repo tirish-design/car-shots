@@ -3,3 +3,6 @@ dist
 exports/
 .vercel
 *.blend1
+
+.vercel
+.env*
