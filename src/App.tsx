@@ -7,6 +7,7 @@ import { Loaders } from './ui/Loaders';
 import { Panel } from './ui/Panel';
 import { StatePanel } from './ui/StatePanel';
 import { Credits } from './ui/Credits';
+import { LoadingNote } from './ui/LoadingNote';
 import { UiProvider } from './ui/uiState';
 
 export function App() {
@@ -20,6 +21,7 @@ export function App() {
         <div className="app">
           <div className="stage-wrap">
             <Stage handle={handle} shotNonce={shotNonce} />
+            <LoadingNote />
           </div>
           <aside className="side">
             <div className="leva-host">
