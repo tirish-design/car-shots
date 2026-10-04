@@ -43,6 +43,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tirish-design/car-shots"
-  },
-  "homepage": "https://car-shots.vercel.app"
+  }
 }

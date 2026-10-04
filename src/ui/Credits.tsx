@@ -5,7 +5,7 @@ export function Credits() {
   return (
     <footer className="credits">
       <p>
-        <a href={REPO}>Source, README and Claude Code skill on GitHub</a>
+        <a href={REPO}>README and Claude Code skill on GitHub</a>
       </p>
       <p>
         Car: <a href="https://sketchfab.com/3d-models/generic-supercar-3485cef88f3d4725ab038ddd70a78557">Generic Supercar</a> by Mona x

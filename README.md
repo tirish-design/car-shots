@@ -2,8 +2,6 @@
 
 A small three.js tool that renders one fictional car the same way every time: pick a paint, add decals or a full livery, choose a camera, export a PNG.
 
-**Try it:** https://car-shots.vercel.app (desktop browser)
-
 ## Why it exists
 
 I needed the same car in a lot of images, from the same angles, in different colours. Image generators couldn't hold the car's shape from one picture to the next: the doors moved, the wheels changed, the roofline drifted. A 3D model doesn't drift. So I built this with Claude Code in a few days, and kept using it for the animations too.
@@ -23,6 +21,8 @@ Everything on screen comes from one **Configuration**, a JSON object you can exp
 The words above are the tool's vocabulary. `CONTEXT.md` defines each one.
 
 ## Run it
+
+It runs locally in a desktop browser.
 
 ```sh
 npm install
